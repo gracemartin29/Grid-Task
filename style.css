@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: black;
+
+  /* center */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
