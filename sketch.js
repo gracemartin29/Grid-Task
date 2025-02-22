@@ -21,7 +21,11 @@ function draw() {
       rect(x, y, 10, 10);
     }
   }
-
+  noFill();
+  stroke(200);
+  strokeWeight(20);
+  rect(350, 250, 700, 500, 20);
+ 
 
   // draw grid
   for (let y = 0; y < height; y += CELLSIZE) {
@@ -53,9 +57,5 @@ function draw() {
 
     }
 
-    noFill();
-    stroke(200);
-    strokeWeight(20);
-    rect(350, 250, 700, 500, 20);
   }
 }
