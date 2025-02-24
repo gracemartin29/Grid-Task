@@ -59,3 +59,52 @@ function draw() {
 
   }
 }
+
+
+// Step by step
+
+/*
+const CELLSIZE = 50;
+const COLOURS = ["#330019", "#660033", "#99004C", "#CC0066", "#FF007F", "#FF3399", "#FF66B2", "#FF99CC", "#FFCCE5"];
+
+function setup() {
+  createCanvas(700, 500);
+  frameRate(6);
+
+  rectMode(CENTER)
+
+}
+
+function draw() {
+
+  // grid loops
+  for (let y = 0; y < height; y += CELLSIZE) {
+    for (let x = 0; x < width; x += CELLSIZE) {
+
+      // set colour
+      fill(random(COLOURS));
+      noStroke();
+
+      // calculate center of heart
+      let centerX = x + CELLSIZE / 2;
+      let centerY = y + CELLSIZE / 2;
+
+      // calculate disatnce from heart center to mouse position
+      let mouseDistance = dist(centerX, centerY, mouseX, mouseY);
+
+      // scale CELLSIZE based on mouseDistance
+      let scaledSize = map(mouseDistance, 0, width, CELLSIZE * 2, CELLSIZE / 2);
+
+      let heartWidth = scaledSize;
+      let heartHeight = scaledSize / 2;
+
+      // draws heart shapeS
+      arc(x + heartWidth / 4, y + heartHeight / 4, heartHeight / 2, heartHeight / 2, PI, 0);
+      arc(x + 3*heartWidth /4, y + heartHeight / 4, heartHeight / 2, heartHeight / 2, PI, 0);
+      triangle(x, y + heartWidth / 4, x + heartWidth, y + heartHeight / 4, x + heartWidth / 2, y + heartHeight);      
+    }
+  }
+
+}
+
+*/
