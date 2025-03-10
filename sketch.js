@@ -3,30 +3,31 @@ const COLOURS = ["#330019", "#660033", "#99004C", "#CC0066", "#FF007F", "#FF3399
 
 function setup() {
   createCanvas(700, 500);
-  frameRate(6);
+  frameRate(7);
 
   rectMode(CENTER)
-
 }
 
 function draw() {
   background(0);
 
-  // draw tv
+  // static tv screen
+  // grid loops
   for (let y = 0; y < height; y += 10) {
     for (let x = 0; x < width; x += 10) {
-      // tv screen
+      // static
       fill(random(70));
       noStroke();
       rect(x, y, 10, 10);
     }
   }
-
+  // border
   noFill();
   stroke(200);
   strokeWeight(20);
   rect(350, 250, 700, 500, 20);
 
+  // interactive hearts
   // grid loops
   for (let y = 0; y < height; y += CELLSIZE) {
     for (let x = 0; x < width; x += CELLSIZE) {
